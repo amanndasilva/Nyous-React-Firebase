@@ -3,7 +3,7 @@ import { useFirebaseApp } from 'reactfire';
 
 import { Container, Form, Button } from 'react-bootstrap';
 import './index.css';
-//import logo from '../../assets/img/';
+import logo from '../../assets/img/Logo.svg';
 
 const Login = () => {
 
@@ -31,8 +31,10 @@ const Login = () => {
 
     return(
         <Container>
-            <Form className='form-signin' onSubmit={event => logar(event)}>
-                
+            <Form className='form-signin' onSubmit={event => logar(event)}> 
+                <div className='text-center'>
+                    <img src={logo} alt='NYOUS' style={{ width : '64px'}} />
+                </div>
                 <br/>
                 <small>Informe seus dados abaixo</small>
                 <hr/>
@@ -59,7 +61,3 @@ const Login = () => {
 }
 
 export default Login;
-
-//<div className='text-center'>
-//<img src={logo} alt='NYOUS' style={{ width : '64px'}} />
-//</div>

@@ -13,7 +13,7 @@ import Login from './pages/login';
 ReactDOM.render(
   <React.StrictMode>
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-      <Register />
+      <Login />
     </FirebaseAppProvider>
   </React.StrictMode>,
   document.getElementById('root')
