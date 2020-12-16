@@ -9,11 +9,12 @@ import firebaseConfig from './utils/firebaseConfig';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Register from './pages/register';
 import Login from './pages/login';
+import EventosPage from './pages/eventos';
 
 ReactDOM.render(
   <React.StrictMode>
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-      <Login />
+      <EventosPage />
     </FirebaseAppProvider>
   </React.StrictMode>,
   document.getElementById('root')

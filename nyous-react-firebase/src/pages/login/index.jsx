@@ -15,13 +15,13 @@ const Login = () => {
     const logar = (event) => {
         event.preventDefault();
 
-        console.log('${email} - ${senha}');
+        console.log(`${email} - ${senha}`);
 
         firebase.auth().signInWithEmailAndPassword(email, senha)
         .then(result => {
             //navegam para a página
-            localStorage.setToken('nyous', result.user.refreshToken);
-            alert('Seja ben vindo');
+            localStorage.setItem('nyous', result.user.refreshToken);
+            alert('Seja bem vindo!');
         })
         .catch(error => {
             alert('Email ou senha inválidos');

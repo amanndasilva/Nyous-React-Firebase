@@ -10,6 +10,10 @@ var firebaseConfig = {
     measurementId: "G-P4VFSPKRRG"
 };
 
-firebase.initializeApp(firebaseConfig);
+//Recebe informações do initializeApp, retorna as info
+const app = firebase.initializeApp(firebaseConfig);
+
+//Para utilizar o firestore nas páginas
+export const db = app.firestore();
 
 export default firebaseConfig;
